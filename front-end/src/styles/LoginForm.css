@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141a0f; /* Verde musgo */
+  font-family: 'Georgia', serif;
+}
+form {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  background-color: #0a0808;
+  padding: 40px;
+  border-radius: 10px;
+  color: #f5e5d9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px; /* Reduz a largura do formulário */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section {
+  width: 45%;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px; /* Ajusta o espaçamento interno */
+  border: none;
+  border-bottom: 2px solid #ffffff; /* Adiciona uma linha branca na parte inferior */
+  background-color: transparent; /* Remove o fundo */
+  color: #ffffff; /* Define a cor do texto como branca */
+  margin-bottom: 18px;
+  font-size: 19px;
+}
+
+input:focus {
+  outline: none; /* Remove o contorno padrão ao focar */
+  border-bottom: 2px solid #c1935c; /* Altera a cor da linha ao focar */
+}
+
+button {
+  width: auto; /* Ajusta o tamanho do botão ao conteúdo */
+  padding: 10px 20px; /* Reduz o padding do botão */
+  background-color: #fa900f;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Reduz o tamanho da fonte */
+  cursor: pointer;
+  color: #302a10;
+  font-weight: bold;
+  align-self: center; /* Centraliza o botão */
+}
+
+button:hover {
+  background-color: #b07f47;
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento abaixo */
+  width: 160px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Espaça os botões igualmente */
+  margin-top: 20px; /* Adiciona espaçamento acima dos botões */
+}
+
+button {
+  flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
+  padding: 10px 20px;
+  background-color: #fa900f;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #302a10;
+  font-weight: bold;
+  margin: 0 5px; /* Adiciona espaçamento horizontal entre os botões */
+}
+
+button:hover {
+  background-color: #b07f47;
+}
+
+button.register-button {
+  background-color: #fa900f; /* Cor de fundo diferente para o botão "Cadastrar" */
+}
+
+button.register-button:hover {
+  background-color: #b07f47; /* Cor ao passar o mouse */
+}

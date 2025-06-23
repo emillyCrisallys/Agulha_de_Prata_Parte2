@@ -1,0 +1,180 @@
+/* Título */
+.h1 {
+  text-align: center;
+  margin: 40px 20px 20px;
+  padding: 10px;
+  color: #f8f3f3;
+}
+
+/* Área do carrinho */
+.cart {
+  padding: 30px;
+}
+
+/* Título do carrinho */
+.cart h1 {
+  text-align: center;
+  margin: 40px 20px 20px;
+  padding: 10px;
+  color: #f8f3f3;
+}
+
+/* Lista de itens no carrinho */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cada item do carrinho */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #2e2e2e;
+}
+
+/* Imagem do item */
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Área de informações do item */
+.cart-item div {
+  flex: 1;
+}
+
+/* Nome do produto */
+.cart-item h3 {
+  margin: 6px 0;
+  color: #f8f3f3;
+  font-size: 1.1rem;
+}
+
+/* Efeito no nome ao passar o mouse */
+.cart-item h3 a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  transition: font-size 0.2s ease;
+}
+
+.cart-item h3 a:hover {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+/* Área dos botões de quantidade e remover */
+.quantity {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Estilo específico para os botões + e - */
+.quantity .quantity-button {
+  width: 40px;
+  height: 32px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #cc8105;
+  border: none;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+/* Botão remover com tamanho natural */
+.quantity .remove-button {
+  height: 32px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #cc8105;
+  border: none;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover nos botões */
+.quantity button:hover {
+  background-color: #e09707;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.back-home:hover {
+  background-color: #e09707;
+  color: #ffffff;
+}
+
+
+/* Texto de quantidade e preço */
+.cart-item p {
+  margin: 8px 0;
+  color: #f8f3f3;
+  font-size: 0.95rem;
+}
+
+/* Preço alinhado à direita e negrito */
+.cart-item p:last-of-type {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+/* Cart.css */
+.finalizar-button {
+  background: #cc8105;
+  color: #f8f3f3;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.finalizar-button:hover {
+  background: #b07f47;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.total {
+  margin-top: 0;
+  text-align: right;
+  font-weight: bold;
+  color: #f8f3f3;
+}

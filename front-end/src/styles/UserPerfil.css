@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #222;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.editar-perfil-text {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f5e5d9;
+}
+
+.container-editar {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0808;
+  padding: 40px;
+  border-radius: 10px;
+  color: #f5e5d9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #c1935c;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid #c1935c;
+  margin: 18px 0;
+}
+
+button.btn-editar .btn-excluir {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fa900f;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #302a10;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background 0.2s;
+}
+
+button.btn-editar:hover {
+  background-color: #efb810;
+}
+
+.success-msg {
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: #ff4d4f;
+  font-size: 15px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.error-msg.geral {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cpf-input[readonly] {
+  background-color: #222 !important;
+  color: #bbb !important;
+  cursor: not-allowed;
+}
+
+.cpf-note {
+  font-size: 13px;
+  color: #c1935c;
+}
+
+.cpf-aviso {
+  font-size: 13px;
+  color: #c1935c;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+.contact-container {
+  max-width: 500px;
+  margin: 80px auto 40px auto;
+  background: #181818;
+  padding: 32px;
+  border-radius: 10px;
+  color: #f5e5d9;
+}
+
+.about-store h3 {
+  margin-top: 24px;
+  color: #fa900f;
+}
+
+.about-store p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #f5e5d9;
+}
