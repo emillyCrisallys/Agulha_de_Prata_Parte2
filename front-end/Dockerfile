@@ -6,6 +6,8 @@ WORKDIR /app
 # Copiar arquivos de configuração de pacotes
 COPY package*.json ./
 
+
+
 # Instalar dependências
 RUN npm ci
 
@@ -28,6 +30,10 @@ RUN npm install -g serve
 
 # Copiar o build do estágio anterior
 COPY --from=build /app/dist /app/dist
+
+# Copiar a pasta img do estágio de build
+COPY --from=build /app/src/img /app/src/img
+
 
 # Expor a porta 3000
 EXPOSE 3000

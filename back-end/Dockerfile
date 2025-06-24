@@ -1,17 +1,15 @@
-FROM node:22-slim AS build
-
-COPY src /app/src
-COPY package.json /app 
-COPY tsconfig.json /app
+FROM node:22
 
 WORKDIR /app
 
+# Copiando os arquivos necessários antes da instalação
+COPY package.json package-lock.json* tsconfig.json ./
+
+RUN npm install
+
+# Agora copia o resto (src etc)
 COPY . .
 
 EXPOSE 3000
 
-RUN npm install 
-
-
-
-CMD ["npm", "run" , "dev"]
+CMD ["npm", "run", "dev"]

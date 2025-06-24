@@ -8,7 +8,9 @@ services:
     environment:
       MYSQL_DATABASE: loja_vinil
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: root
+      MYSQL_USER: loja_user
+      MYSQL_PASSWORD: loja_pass
+      MYSQL_ROOT_HOST: "%"
     ports:
       - "3306:3306"
     volumes:
@@ -28,8 +30,8 @@ services:
     environment:
       DB_HOST: database
       DB_PORT: 3306
-      DB_USER: root
-      DB_PASSWORD: root
+      DB_USER: loja_user
+      DB_PASSWORD: loja_pass
       DB_NAME: loja_vinil
       JWT_SECRET: segredo_bem_secreto
       JWT_EXPIRES_IN: 7d
