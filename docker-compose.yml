@@ -8,8 +8,9 @@ services:
     environment:
       MYSQL_DATABASE: loja_vinil
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
     networks:
@@ -37,7 +38,7 @@ services:
       database:
         condition: service_healthy
     ports:
-      - "3001:3000"
+      - "3000:3000"
     networks:
       - app-network
 
@@ -50,7 +51,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "3000:3000"
+      - "5173:3000"
     networks:
       - app-network
 

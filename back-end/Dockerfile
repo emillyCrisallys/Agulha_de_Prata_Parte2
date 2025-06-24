@@ -1,16 +1,17 @@
-FROM node:22-slim
+FROM node:22-slim AS build
+
+COPY src /app/src
+COPY package.json /app 
+COPY tsconfig.json /app
 
 WORKDIR /app
 
-# Copia arquivos de dependências primeiro
-COPY package*.json ./
-
-# Instala dependências
-RUN npm install
-
-# Copia o restante do projeto
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+RUN npm install 
+
+
+
+CMD ["npm", "run" , "dev"]
