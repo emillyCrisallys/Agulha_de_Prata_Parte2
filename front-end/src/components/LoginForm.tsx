@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import api from "../utils/api";
 import { useNavigate } from "react-router-dom";
 import "../styles/LoginForm.css";
+import logo from "../img/Logo_site.png";
 
 interface LoginResponse {
   token: string;
@@ -65,7 +66,7 @@ const LoginForm: React.FC = () => {
     <form onSubmit={handleSubmit}>
       <div>
         <h2>Login</h2>
-        <img src="/src/img/Logo_site.png" alt="Logo" className="login-logo" />
+        <img src={logo} alt="Logo" className="login-logo" />
         <label htmlFor="email">Email:</label>
         <input
           type="email"

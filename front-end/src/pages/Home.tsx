@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../utils/api";
 import "../styles/HomeLay.css";
 import logo from "../img/Logo_site.png";
+import carrinho from "../img/carrinho.png";
 
 interface Product {
   id: number;
@@ -104,7 +105,7 @@ const Home: React.FC = () => {
           <a href="/UserPerfil">Perfil</a>
           <a href="/Cart">
             <img
-              src="/src/img/carrinho.png"
+              src={carrinho}
               alt="Carrinho"
               className="cart-icon"
             />

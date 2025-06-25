@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../utils/api";
 import "../styles/UserPerfil.css";
 import logo from "../img/Logo_site.png";
+import carrinho from "../img/carrinho.png";
 
 
 type ErrorFields = {
@@ -129,7 +130,7 @@ const UserPerfil = () => {
           <a href="/UserPerfil">Perfil</a>
           <a href="/Cart">
             <img
-              src="/src/img/carrinho.png"
+              src={carrinho}
               alt="Carrinho"
               className="cart-icon"
             />

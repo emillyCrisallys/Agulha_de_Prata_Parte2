@@ -31,8 +31,6 @@ RUN npm install -g serve
 # Copiar o build do estágio anterior
 COPY --from=build /app/dist /app/dist
 
-# Copiar a pasta img do estágio de build
-COPY --from=build /app/src/img /app/src/img
 
 
 # Expor a porta 3000

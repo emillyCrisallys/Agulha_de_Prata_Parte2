@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
 import logo from "../img/Logo_site.png";
+import carrinho from "../img/carrinho.png";
 
 const Contact: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -33,7 +34,7 @@ const Contact: React.FC = () => {
           <a href="/UserPerfil">Perfil</a>
           <a href="/Cart">
             <img
-              src="/src/img/carrinho.png"
+              src={carrinho}
               alt="Carrinho"
               className="cart-icon"
             />
